@@ -11,11 +11,9 @@ const DefaultLayout = (props: IProps) => {
   const { children } = props;
 
   return (
-    <Layout>
-      <Header className='h-[65px] bg-white'>
-        <HeaderNav />
-      </Header>
-      <Content>{children}</Content>
+    <Layout className='bg-white'>
+      <HeaderNav />
+      {children}
     </Layout>
 
     // <div className="flex flex-col h-screen justify-between">
