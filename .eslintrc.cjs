@@ -19,7 +19,12 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'import/no-unresolved': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
-    'prettier/prettier': 'warn',
+    'prettier/prettier': [
+      'warn',
+      {
+        endOfLine: 'auto',
+      },
+    ],
     'no-undef': 'off',
     'no-alert': 'off',
     'no-console': 'off',
