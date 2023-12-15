@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(_common.scss);
 
 .background-image {
   background-position: center;
@@ -13,7 +14,36 @@
 }
 
 .header-menu {
-  .ant-menu-item::after, .ant-menu-submenu::after {
+  background-color: transparent;
+
+  &::before,
+  &::after {
     display: none;
+  }
+
+  .ant-menu-item,
+  .ant-menu-submenu {
+    cursor: pointer;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      color: #77c373 !important;
+    }
+
+    &.ant-menu-item-selected,
+    &.ant-menu-submenu-selected {
+      font-weight: 600;
+    }
+
+    .ant-menu-submenu-arrow {
+      display: revert;
+      position: absolute;
+      right: -15px;
+      top: 55%;
+      transform: rotate(90deg);
+    }
   }
 }
