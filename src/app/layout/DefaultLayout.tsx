@@ -1,6 +1,7 @@
 import moment from 'moment';
 import { Layout, Flex } from 'antd';
 import HeaderNav from './HeaderNav';
+import FooterComponent from './Footer';
 const { Header, Footer, Sider, Content } = Layout;
 
 interface IProps {
@@ -12,10 +13,13 @@ const DefaultLayout = (props: IProps) => {
 
   return (
     <Layout>
-      <Header className='h-[65px] bg-white'>
+      <Header className="h-[65px] bg-white">
         <HeaderNav />
       </Header>
       <Content>{children}</Content>
+      <Footer className="p-0">
+        <FooterComponent />
+      </Footer>
     </Layout>
 
     // <div className="flex flex-col h-screen justify-between">
