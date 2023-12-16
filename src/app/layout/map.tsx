@@ -58,7 +58,7 @@ const MapComponent = () => {
     }
   }, [map]);
 
-  return <div ref={mapRef} style={{ width: '50%', height: '43rem' }}></div>;
+  return <div ref={mapRef} style={{ width: '100%', aspectRatio: '1' }}></div>;
 };
 
 export default MapComponent;

@@ -1,5 +1,7 @@
+import Banner from 'app/page/Home/Banner';
+
 const Home = () => {
-  return <>Hello from home page</>;
+  return <Banner />;
 };
 
 export default Home;
