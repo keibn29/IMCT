@@ -1,5 +1,14 @@
+import { DefaultCarousel } from 'app/components/Carousel';
+
 const Banner = () => {
-  return <div className="background-image banner w-[100vw] h-[800px]" />;
+  return (
+    <DefaultCarousel>
+      <div className="background-image banner w-[100vw] h-[800px]" />
+      <div className="background-image banner w-[100vw] h-[800px]" />
+      <div className="background-image banner w-[100vw] h-[800px]" />
+      <div className="background-image banner w-[100vw] h-[800px]" />
+    </DefaultCarousel>
+  );
 };
 
 export default Banner;
