@@ -11,6 +11,10 @@
   &.banner {
     background-image: url('../images/banner.png');
   }
+
+  &.introduction {
+    background-image: url('../images/introduction.png');
+  }
 }
 
 .header-menu {
@@ -44,6 +48,23 @@
       right: -15px;
       top: 55%;
       transform: rotate(90deg);
+    }
+  }
+}
+
+// service
+.service-wrapper {
+  .service-icon {
+    path {
+      fill: #77C373;
+    }
+  }
+
+  &:hover {
+    .service-icon {
+      path {
+        fill: #ffffff;
+      }
     }
   }
 }
