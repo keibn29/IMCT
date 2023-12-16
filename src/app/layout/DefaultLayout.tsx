@@ -13,7 +13,7 @@ const DefaultLayout = (props: IProps) => {
     <Layout className="bg-white">
       <Header />
       {children}
-      <Footer></Footer>
+      <Footer />
     </Layout>
   );
 };

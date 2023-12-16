@@ -47,7 +47,7 @@ const MenuFooter = () => {
     );
   }
 
-  return divElements; // Render các phần tử div
+  return divElements;
 };
 
 const Footer = () => (

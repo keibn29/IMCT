@@ -27,7 +27,7 @@ const MapComponent = () => {
           zoom: 19,
         }),
       });
-      const markerCoords = fromLonLat([106.644414, 10.802346]); // Tọa độ của marker
+      const markerCoords = fromLonLat([106.644414, 10.802346]);
       const markerStyle = new Style({
         image: new Icon({
           anchor: [0.5, 1],
@@ -52,7 +52,6 @@ const MapComponent = () => {
       );
       setMap(newMap);
     } else {
-      // Thay đổi tọa độ của bản đồ
       const newCenter = fromLonLat([106.644414, 10.802346]);
       map.getView().setCenter(newCenter);
     }
