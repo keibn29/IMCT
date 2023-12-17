@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(_common.scss);
+
+.background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.banner {
+    background-image: url('../images/banner.png');
+  }
+
+  &.introduction {
+    background-image: url('../images/introduction.png');
+  }
+}
+
+.header-menu {
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  .ant-menu-item,
+  .ant-menu-submenu {
+    cursor: pointer;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      color: #77c373 !important;
+    }
+
+    &.ant-menu-item-selected,
+    &.ant-menu-submenu-selected {
+      font-weight: 600;
+    }
+
+    .ant-menu-submenu-arrow {
+      display: revert;
+      position: absolute;
+      right: -15px;
+      top: 55%;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+// service
+.service-wrapper {
+  .service-icon {
+    path {
+      fill: #77C373;
+    }
+  }
+
+  &:hover {
+    .service-icon {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+.ant-input-group-addon{
+  border: none !important;
+  background-color: #77C373 !important;
+}
+
+.text-size {
+  @media (max-width: 576px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
