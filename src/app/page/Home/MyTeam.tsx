@@ -1,4 +1,4 @@
-import { Col, Flex, Image, Row, Space } from 'antd';
+import { Flex, Image } from 'antd';
 import { DefaultCarousel } from 'app/components/Carousel';
 import SectionTitle from 'app/components/SectionTitle';
 import AvatarMember from 'images/avatar.png';
