@@ -10,14 +10,12 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <div className="mb-[500px]">
-        <Introduction />
-        <Service />
-        <Product />
-        <Partner />
-        <Customer />
-        <MyTeam />
-      </div>
+      <Introduction />
+      <Service />
+      <Product />
+      <Partner />
+      <Customer />
+      <MyTeam />
     </>
   );
 };
