@@ -36,7 +36,7 @@ const Partner = () => {
   return (
     <Flex className="bg-dark-blue py-[80px]" justify="center">
       <div className="container px-[100px]">
-        <SectionTitle title="Khách Hàng Của Chúng Tôi" />
+        <SectionTitle title="Khách Hàng Của Chúng Tôi" isWhite={true} />
         <Row gutter={30} className="mt-[10px]">
           {listPartner.map((partner: IPartner) => (
             <Col key={partner.id} span={8}>
