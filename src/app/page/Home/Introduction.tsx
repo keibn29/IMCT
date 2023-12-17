@@ -35,8 +35,8 @@ const tabItems: TabsProps['items'] = [
   },
   {
     key: '4',
-    label: 'Giá trị cốt lõi',
-    children: 'Content of Tab Pane 3',
+    label: 'Tiêu chuẩn',
+    children: 'Content of Tab Pane 4',
   },
 ];
 

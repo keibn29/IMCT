@@ -1,5 +1,4 @@
 import { Col, Flex, Row, Space } from 'antd';
-import HorizontalIntro from 'images/horizontal-intro.svg?react';
 import ManagerIcon from 'images/manager.svg?react';
 import CapacityIcon from 'images/capacity.svg?react';
 import SurveyIcon from 'images/survey.svg?react';
@@ -8,6 +7,7 @@ import MonitorIcon from 'images/monitor.svg?react';
 import ReportIcon from 'images/report.svg?react';
 import DeploymentIcon from 'images/deployment.svg?react';
 import AnalystIcon from 'images/analyst.svg?react';
+import SectionTitle from 'app/components/SectionTitle';
 
 interface IService {
   id: number;
@@ -71,31 +71,25 @@ const listService: IService[] = [
     icon: <AnalystIcon />,
     title: 'Cập nhật, xử lý và phân tích dữ liệu',
     content:
-      'Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,',
+      'Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante',
   },
 ];
 
 const Service = () => {
   return (
     <div className="container mx-[auto] py-[80px]">
-      <Flex justify="center" align="center">
-        <HorizontalIntro className="mt-[5px]" />
-        <span className="text-[40px] font-bold">Dịch Vụ Của Chúng Tôi</span>
-        <HorizontalIntro className="mt-[5px]" />
-      </Flex>
-      <Row gutter={[20, 20]} className="mt-[50px]">
+      <SectionTitle title="Dịch Vụ Của Chúng Tôi" />
+      <Row gutter={[20, 20]}>
         {listService.map((service: IService) => (
           <Col key={service.id} span={6}>
             <Flex
-              className="service-wrapper group shadow-default h-[100%] px-[30px] py-[30px] text-center hover:bg-primary hover:text-white"
+              className="service-wrapper group shadow-default h-[100%] px-[30px] py-[30px] text-center hover:bg-primary hover:text-white cursor-pointer"
+              align="center"
               vertical
-              justify="space-between"
               gap={20}
             >
-              <Flex vertical align="center" gap={20}>
-                <Space className="service-icon">{service.icon}</Space>
-                <span className="text-primary text-lg font-bold group-hover:text-white">{service.title}</span>
-              </Flex>
+              <Space className="service-icon">{service.icon}</Space>
+              <span className="text-primary text-lg font-bold group-hover:text-white h-[50px]">{service.title}</span>
               <p className="text-[15px]">{service.content}</p>
             </Flex>
           </Col>

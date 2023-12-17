@@ -25,7 +25,8 @@ const Header = () => {
 
   return (
     <Flex
-      className={`fixed h-[100px] text-white w-[100vw] z-[99] bg-[${headerBackgroundColor}]`}
+      className={`fixed h-[100px] text-white w-[100vw] z-[99]`}
+      style={{ backgroundColor: headerBackgroundColor }}
       justify="center"
       align="center"
     >

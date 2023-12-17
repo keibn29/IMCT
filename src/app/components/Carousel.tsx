@@ -6,10 +6,10 @@ interface ICarouselProps extends CarouselProps {
 }
 
 export const DefaultCarousel = (props: ICarouselProps) => {
-  const { children, autoplay = true, dots = true, ...other } = props;
+  const { children, autoplay = true, dots = true, slidesToShow = 1, ...other } = props;
 
   return (
-    <Carousel className="styled-carousel" autoplay={autoplay} dots={dots} {...other}>
+    <Carousel className="styled-carousel" autoplay={autoplay} dots={dots} slidesToShow={slidesToShow} {...other}>
       {children}
     </Carousel>
   );
