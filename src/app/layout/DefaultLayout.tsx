@@ -1,4 +1,5 @@
 import { Layout } from 'antd';
+import Footer from './Footer';
 import Header from './Header';
 
 interface IProps {
@@ -12,6 +13,7 @@ const DefaultLayout = (props: IProps) => {
     <Layout className="bg-white">
       <Header />
       {children}
+      <Footer />
     </Layout>
   );
 };

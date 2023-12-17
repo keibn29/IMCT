@@ -68,3 +68,15 @@
     }
   }
 }
+
+.ant-input-group-addon{
+  border: none !important;
+  background-color: #77C373 !important;
+}
+
+.text-size {
+  @media (max-width: 576px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
