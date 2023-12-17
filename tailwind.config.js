@@ -2,7 +2,11 @@
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        default: '0px 3px 10px 0px rgba(0, 0, 0, 0.25)',
+      },
+    },
     colors: {
       primary: '#77C373',
       secondary: '#666666',
@@ -16,6 +20,8 @@ export default {
       white: '#ffffff',
       black: '#000000',
       'dark-blue': '#215E74',
+      'dark-green': '#529949',
+      'light-gray': '#F0F0F0',
     },
   },
   plugins: [],
