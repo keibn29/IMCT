@@ -5,7 +5,6 @@ import AvatarMember from 'images/avatar.png';
 import AvatarMember2 from 'images/avatar2.png';
 import AvatarMember3 from 'images/avatar3.png';
 import AvatarMember4 from 'images/avatar4.png';
-import { useEffect, useState } from 'react';
 
 interface ITeamMember {
   id: number;
@@ -23,16 +22,6 @@ const members: ITeamMember[] = [
 ];
 
 const MyTeam = () => {
-  useEffect(() => {
-    const childElements = document.querySelectorAll('.child');
-    childElements.forEach((childElement) => {
-      const parentElement = childElement.parentElement;
-      if (parentElement) {
-        parentElement.classList.add('bottom-right');
-      }
-    });
-  }, []);
-
   return (
     <Flex className="bg-light-gray pt-[50px] pb-[70px]" justify="center">
       <div className="container px-[100px]">
@@ -41,7 +30,7 @@ const MyTeam = () => {
           {members.map((member: ITeamMember) => (
             <div key={member.id}>
               <Flex className="bg-light-gray px-[35px] py-[25px]" vertical align="center">
-                <Flex className="w-[160px] h-[160px] rounded-full border-2 border-solid border-primary circle-team">
+                <Flex className="myteam-image-wrapper w-[160px] h-[160px] rounded-full border-2 border-solid border-primary circle-team">
                   <Image
                     className="rounded-full child"
                     width={150}

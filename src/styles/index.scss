@@ -58,7 +58,7 @@
 .service-wrapper {
   .service-icon {
     path {
-      fill: #77C373;
+      fill: #77c373;
     }
   }
 
@@ -71,9 +71,9 @@
   }
 }
 
-.ant-input-group-addon{
+.ant-input-group-addon {
   border: none !important;
-  background-color: #77C373 !important;
+  background-color: #77c373 !important;
 }
 
 .text-size {
@@ -84,7 +84,7 @@
 }
 
 .circle-team {
-  position: relative; 
+  position: relative;
   overflow: hidden;
 }
 
@@ -99,9 +99,17 @@
 }
 
 .continue:hover ~ .line {
-  background-color: #77C373;
+  background-color: #77c373;
 }
 
-#carousel-item-3{
+#carousel-item-3 {
   background-color: #064797;
+}
+
+.myteam-image-wrapper {
+  .ant-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
