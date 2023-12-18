@@ -2,6 +2,7 @@ import { DownOutlined, SearchOutlined } from '@ant-design/icons';
 import { Flex, Menu, Select, Space } from 'antd';
 import { languageOptions, menuItems } from 'constant/nav';
 import Logo from 'images/logo.svg?react';
+import { none } from 'ol/centerconstraint';
 import { useEffect, useState } from 'react';
 
 type HeaderBackgroundColor = 'transparent' | '#17363B';
@@ -37,7 +38,7 @@ const Header = () => {
         <Menu
           className="justify-center items-center text-white gap-[30px] text-lg font-light header-menu select-none"
           mode="horizontal"
-          defaultSelectedKeys={['11']}
+          defaultSelectedKeys={[]}
           items={menuItems}
         />
         <Flex align="center" gap={10}>
