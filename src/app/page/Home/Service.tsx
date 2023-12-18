@@ -83,10 +83,11 @@ const Service = () => {
         {listService.map((service: IService) => (
           <Col key={service.id} span={6}>
             <Flex
-              className="service-wrapper group shadow-default h-[100%] px-[30px] py-[30px] text-center hover:bg-primary hover:text-white cursor-pointer"
+              className="service-wrapper group shadow-default h-[35vh] px-[30px] py-[30px] text-center hover:bg-primary hover:text-white cursor-pointer"
               align="center"
               vertical
               gap={20}
+              style={{ aspectRatio: '1', overflow: 'hidden' }}
             >
               <Space className="service-icon">{service.icon}</Space>
               <span className="text-primary text-lg font-bold group-hover:text-white h-[50px]">{service.title}</span>

@@ -1,7 +1,8 @@
 import { Col, Flex, Image, Row } from 'antd';
 import SectionTitle from 'app/components/SectionTitle';
 import ProductImage from '../../../images/product.png';
-
+import ProductImage2 from '../../../images/product2.png';
+import ProductImage3 from '../../../images/product3.png';
 interface ICarousel {
   id: number;
   imageUrl: string;
@@ -18,14 +19,14 @@ const listCarousel: ICarousel[] = [
   },
   {
     id: 2,
-    imageUrl: ProductImage,
+    imageUrl: ProductImage2,
     title: 'Giải pháp chuyển đổi số',
     content:
       'Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a',
   },
   {
     id: 3,
-    imageUrl: ProductImage,
+    imageUrl: ProductImage3,
     title: 'Hệ thống thông tin quản lý',
     content:
       'Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a',

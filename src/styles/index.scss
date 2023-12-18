@@ -11,7 +11,9 @@
   &.banner {
     background-image: url('../images/banner.png');
   }
-
+  &.banner1 {
+    background-image: url('../images/banner1.png');
+  }
   &.introduction {
     background-image: url('../images/introduction.png');
   }
@@ -79,4 +81,27 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+}
+
+.circle-team {
+  position: relative; 
+  overflow: hidden;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.continue:hover {
+  color: #77c373;
+}
+
+.continue:hover ~ .line {
+  background-color: #77C373;
+}
+
+#carousel-item-3{
+  background-color: #064797;
 }
