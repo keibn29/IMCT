@@ -94,14 +94,6 @@
   right: 0;
 }
 
-.continue:hover {
-  color: #77c373;
-}
-
-.continue:hover ~ .line {
-  background-color: #77c373;
-}
-
 #carousel-item-3 {
   background-color: #064797;
 }
@@ -111,5 +103,38 @@
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+}
+
+.partner-container {
+  background-image: url('../images/partner-bg.png');
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #215E74;
+    opacity: 0.8;
+  }
+
+  .partner-wrapper {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #77C373;
+      transition: top 0.9s ease;
+    }
+  
+    &:hover::before {
+        top: 0;
+      }
   }
 }

@@ -27,18 +27,6 @@ const userItems: ItemType[] = [
 ];
 
 const sharedItems: ItemType[] = [
-  // {
-  //   key: URL.Login,
-  //   components: <Login />,
-  //   layout: NONE_LAYOUT,
-  //   private: false,
-  // },
-  // {
-  //   key: '/login',
-  //   components: <Login />,
-  //   layout: NONE_LAYOUT,
-  //   private: false,
-  // },
   {
     key: '*',
     components: <NotFound />,
