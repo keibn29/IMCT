@@ -1,6 +1,4 @@
 import { Flex, Space, Typography, Input, Menu, Image } from 'antd';
-import MapComponent from './map';
-import address from 'images/Group 202.png';
 import Logo from 'images/logo.svg?react';
 import { SendOutlined, FacebookFilled, YoutubeOutlined, YoutubeFilled } from '@ant-design/icons';
 import Location from 'images/location.png';
@@ -56,7 +54,15 @@ const MenuFooter = () => {
 const Footer = () => (
   <Flex vertical className="w-screen max-w-full">
     <Flex align="center" className="grid grid-cols-1 md:grid-cols-2">
-      <MapComponent></MapComponent>
+      <iframe
+        src="https://maps.google.com/maps?width=600&amp;height=600&amp;hl=en&amp;q=304%20Tr%C6%B0%E1%BB%9Dng%20Chinh%2F6D%20%C4%90.%20Tr%C6%B0%E1%BB%9Dng%20Chinh%2C%20Ph%C6%B0%E1%BB%9Dng%2013%2C%20T%C3%A2n%20B%C3%ACnh%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen={true}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
       <Flex className="text-white bg-primary w-full" justify="center" align="center" style={{ aspectRatio: 1 }}>
         <Flex vertical gap={20}>
           <Flex className="mt-[50px] pb-3 " gap={20} align="center">

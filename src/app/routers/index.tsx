@@ -4,6 +4,7 @@ import NotFound from 'app/page/Results/NotFound';
 import DefaultLayout from 'app/layout/DefaultLayout';
 import { URL } from 'constant/url';
 import { ConfigProvider } from 'antd';
+import Contact from 'app/page/Contact/Content';
 
 const DEFAULT_LAYOUT = 'default';
 const NONE_LAYOUT = 'none';
@@ -42,6 +43,12 @@ const sharedItems: ItemType[] = [
   {
     key: '*',
     components: <NotFound />,
+    layout: NONE_LAYOUT,
+    private: false,
+  },
+  {
+    key: '/contact',
+    components: <Contact />,
     layout: NONE_LAYOUT,
     private: false,
   },
