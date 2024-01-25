@@ -4,6 +4,11 @@ import NotFound from 'app/page/Results/NotFound';
 import DefaultLayout from 'app/layout/DefaultLayout';
 import { URL } from 'constant/url';
 import { ConfigProvider } from 'antd';
+import Contact from 'app/page/Contact/Content';
+import Recruitment from 'app/page/Recruitment/Content';
+import News from 'app/page/News/Content';
+import HomeIntroduction from 'app/page/Introduce';
+import ServicePage from 'app/page/ServicePage';
 
 const DEFAULT_LAYOUT = 'default';
 const NONE_LAYOUT = 'none';
@@ -31,6 +36,36 @@ const sharedItems: ItemType[] = [
     key: '*',
     components: <NotFound />,
     layout: NONE_LAYOUT,
+    private: false,
+  },
+  {
+    key: '/contact',
+    components: <Contact />,
+    layout: DEFAULT_LAYOUT,
+    private: false,
+  },
+  {
+    key: '/recruitment',
+    components: <Recruitment />,
+    layout: DEFAULT_LAYOUT,
+    private: false,
+  },
+  {
+    key: '/news',
+    components: <News />,
+    layout: DEFAULT_LAYOUT,
+    private: false,
+  },
+  {
+    key: '/introduce',
+    components: <HomeIntroduction />,
+    layout: DEFAULT_LAYOUT,
+    private: false,
+  },
+  {
+    key: '/service',
+    components: <ServicePage />,
+    layout: DEFAULT_LAYOUT,
     private: false,
   },
 ];

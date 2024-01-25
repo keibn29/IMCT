@@ -47,7 +47,7 @@ const Partner = () => {
                 className="group cursor-pointer h-[100%] rounded-[10px] bg-white relative overflow-hidden hover:text-white partner-wrapper"
               >
                 <Image
-                  className="object-cover rounded-t-[10px]"
+                  className="object-cover rounded-t-[10px] zoom-in"
                   width="100%"
                   height={285}
                   src={partner.imageUrl}
