@@ -5,6 +5,7 @@ import Product from './Product';
 import Partner from './Partner';
 import Customer from './Customer';
 import MyTeam from './MyTeam';
+import MapComponent from './map';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Partner />
       <Customer />
       <MyTeam />
+      <MapComponent />
     </>
   );
 };

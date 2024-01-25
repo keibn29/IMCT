@@ -1,10 +1,9 @@
-import { Flex, Space, Typography, Form, Input, Menu, Image, Button } from 'antd';
-import Logo from 'images/logo.svg?react';
-import { SendOutlined, FacebookFilled, YoutubeOutlined, YoutubeFilled } from '@ant-design/icons';
+import { Flex, Typography, Form, Input, Button } from 'antd';
 import Location from 'images/location.svg?react';
 import Phone from 'images/phone.svg?react';
 import Email from 'images/email.svg?react';
 import TextArea from 'antd/es/input/TextArea';
+import Title from 'app/components/Title';
 
 const { Text, Link } = Typography;
 const menuItems = [
@@ -40,11 +39,12 @@ const menuItems = [
 
 const Contact = () => (
   <>
-    <Flex className="">
-      <div className="">Liên Hệ</div>
-      <div>Trang chủ/Liên hệ</div>
+    <Flex className="py-[80px] heading-container background-image contact-bg" justify="center">
+      <div className="container">
+        <Title className="z-[2] relative" title="Liên hệ" isWhite={true} title2="Trang chủ/Liên hệ" />
+      </div>
     </Flex>
-    <Flex vertical>
+    <Flex vertical className="my-40">
       <Flex className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
         <Flex className="grid grid-cols-1 gap-8">
           <Flex className="w-full">
@@ -79,6 +79,7 @@ const Contact = () => (
             </Flex>
           </Flex>
           <iframe
+            title="Location-HCM"
             src="https://maps.google.com/maps?width=600&amp;height=600&amp;hl=en&amp;q=304%20Tr%C6%B0%E1%BB%9Dng%20Chinh%2F6D%20%C4%90.%20Tr%C6%B0%E1%BB%9Dng%20Chinh%2C%20Ph%C6%B0%E1%BB%9Dng%2013%2C%20T%C3%A2n%20B%C3%ACnh%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             width="100%"
             className="aspect-square"
@@ -121,6 +122,7 @@ const Contact = () => (
             </Flex>
           </Flex>
           <iframe
+            title="Location-HN"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d329.25827858395945!2d105.80515043753223!3d20.987334719631907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acc01e941509%3A0x4e77813882ad58b3!2zU-G7kSAyMCwgMjEgTmcuIDE2OCDEkC4gTmd1eeG7hW4gWGnhu4NuLCBI4bqhIMSQw6xuaCwgVGhhbmggWHXDom4sIEjDoCBO4buZaSAxMDAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1706084774890!5m2!1svi!2s"
             width="100%"
             className="aspect-square"
