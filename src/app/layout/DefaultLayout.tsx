@@ -1,4 +1,4 @@
-import { Layout } from 'antd';
+import { Layout, ConfigProvider } from 'antd';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -10,11 +10,13 @@ const DefaultLayout = (props: IProps) => {
   const { children } = props;
 
   return (
-    <Layout className="bg-white">
-      <Header />
-      {children}
-      <Footer />
-    </Layout>
+    <ConfigProvider theme={{ token: { fontFamily: 'Inter' } }}>
+      <Layout className="bg-white">
+        <Header />
+        {children}
+        <Footer />
+      </Layout>
+    </ConfigProvider>
   );
 };
 export default DefaultLayout;
