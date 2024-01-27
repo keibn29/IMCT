@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 @import url(_common.scss);
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Variable.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .background-image {
   background-position: center;

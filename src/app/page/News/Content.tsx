@@ -4,6 +4,7 @@ import ProductImage from '../../../images/Recruitment1.png';
 import ProductImage2 from '../../../images/Recruitment2.png';
 import ProductImage3 from '../../../images/Recruitment3.png';
 import ArrowRight from 'images/arrow-right-blue.svg?react';
+import PaginationCustom from 'app/components/PaginationCustom';
 const { Text, Link } = Typography;
 interface ICarousel {
   id: number;
@@ -86,6 +87,9 @@ const News = () => (
               </Flex>
             </Col>
           ))}
+        </Row>
+        <Row>
+          <PaginationCustom />
         </Row>
       </div>
     </Flex>
