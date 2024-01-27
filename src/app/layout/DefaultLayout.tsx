@@ -10,7 +10,7 @@ const DefaultLayout = (props: IProps) => {
   const { children } = props;
 
   return (
-    <ConfigProvider theme={{ token: { fontFamily: 'Inter' } }}>
+    <ConfigProvider theme={{ token: { fontFamily: 'Inter, sans-serif' } }}>
       <Layout className="bg-white">
         <Header />
         {children}
