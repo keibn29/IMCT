@@ -50,6 +50,12 @@ body {
   &.introduce-bg {
     background-image: url('../images/introduction-title.png');
   }
+  &.news-bg {
+    background-image: url('../images/news_bg.png');
+  }
+  &.recruitment-bg {
+    background-image: url('../images/Recruitment-bg.png');
+  }
 }
 
 .header-menu {
@@ -241,5 +247,19 @@ body {
     background-color: #529949;
     color: #ffffff;
     border: none;
+    .arrow-icon {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}
+.email-input {
+  input {
+    font-size: 13px;
+    border-radius: 0;
+  }
+  .ant-input-group-addon {
+    border-radius: 0;
   }
 }

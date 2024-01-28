@@ -15,6 +15,7 @@
     "@ant-design/plots": "^2.1.2",
     "@reduxjs/toolkit": "^2.0.1",
     "antd": "^5.12.2",
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.2",
     "lodash": "^4.17.21",
@@ -31,6 +32,7 @@
     "vite-tsconfig-paths": "^4.2.2"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/mapbox-gl": "^2.7.19",
     "@types/ol": "^7.0.0",
     "@types/react": "^18.2.43",

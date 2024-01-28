@@ -5,7 +5,9 @@ import CustomerImage from 'images/customer.png';
 import SecondCustomer from 'images/customer2.png';
 import ThreeCustomer from 'images/customer3.png';
 import FourCustomer from 'images/customer4.png';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 interface IImageCustomer {
   id: number;
   imageUrl: string;
@@ -20,27 +22,32 @@ const listImageCustomer: IImageCustomer[] = [
 ];
 
 const Customer = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <Flex className="bg-white pt-[50px] pb-[70px]" justify="center">
-      <div className="container px-[100px]">
-        <SectionTitle title="Khách Hàng Của Chúng Tôi" />
-        <DefaultCarousel dots={false} slidesToShow={4}>
-          {listImageCustomer.map((img: IImageCustomer, index: number) => (
-            <div key={img.id} className="px-[10px]">
-              <Flex className="bg-light-gray px-[35px] py-[25px]" id={`carousel-item-${index}`}>
-                <Image
-                  width="100%"
-                  height={150}
-                  src={img.imageUrl}
-                  preview={false}
-                  style={{ objectFit: 'scale-down' }}
-                />
-              </Flex>
-            </div>
-          ))}
-        </DefaultCarousel>
-      </div>
-    </Flex>
+    <div data-aos="fade-up" data-aos-duration="3000">
+      <Flex className="bg-white pt-[50px] pb-[70px]" justify="center">
+        <div className="container px-[100px]">
+          <SectionTitle title="Khách Hàng Của Chúng Tôi" />
+          <DefaultCarousel dots={false} slidesToShow={4}>
+            {listImageCustomer.map((img: IImageCustomer, index: number) => (
+              <div key={img.id} className="px-[10px]">
+                <Flex className="bg-light-gray px-[35px] py-[25px]" id={`carousel-item-${index}`}>
+                  <Image
+                    width="100%"
+                    height={150}
+                    src={img.imageUrl}
+                    preview={false}
+                    style={{ objectFit: 'scale-down' }}
+                  />
+                </Flex>
+              </div>
+            ))}
+          </DefaultCarousel>
+        </div>
+      </Flex>
+    </div>
   );
 };
 

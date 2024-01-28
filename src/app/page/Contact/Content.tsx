@@ -1,41 +1,9 @@
-import { Flex, Typography, Form, Input, Button } from 'antd';
+import { Flex, Form, Input, Button } from 'antd';
 import Location from 'images/location.svg?react';
 import Phone from 'images/phone.svg?react';
 import Email from 'images/email.svg?react';
 import TextArea from 'antd/es/input/TextArea';
 import Title from 'app/components/Title';
-
-const { Text, Link } = Typography;
-const menuItems = [
-  {
-    key: 1,
-    label: 'Giới Thiệu',
-  },
-  {
-    key: 2,
-    label: 'Dịch Vụ',
-  },
-  {
-    key: 3,
-    label: 'Sản Phẩm',
-  },
-  {
-    key: 4,
-    label: 'Đối Tác',
-  },
-  {
-    key: 5,
-    label: 'Tin Tức',
-  },
-  {
-    key: 6,
-    label: 'Tuyển Dụng',
-  },
-  {
-    key: 7,
-    label: 'Liên Hệ',
-  },
-];
 
 const Contact = () => (
   <>
@@ -55,7 +23,7 @@ const Contact = () => (
                 </Flex>
                 <Flex vertical>
                   <span className="text-base font-bold uppercase">Văn phòng tại tp. hồ chí minh</span>
-                  <span className="text-base ">6/12 Trần Văn Dư, P. 13, Q. Tân Bình, TP. Hồ Chí Minh</span>
+                  <span className="text-sm ">6/12 Trần Văn Dư, P. 13, Q. Tân Bình, TP. Hồ Chí Minh</span>
                 </Flex>
               </Flex>
               <Flex className="gap-4" align="center">
@@ -64,7 +32,7 @@ const Contact = () => (
                 </Flex>
                 <Flex vertical>
                   <span className="text-base font-bold uppercase">Hotline</span>
-                  <span className="text-base ">(0243) 2010073 - (0286) 2967455 - 0913222613</span>
+                  <span className="text-sm ">(0243) 2010073 - (0286) 2967455 - 0913222613</span>
                 </Flex>
               </Flex>
               <Flex className="gap-4" align="center">
@@ -73,7 +41,7 @@ const Contact = () => (
                 </Flex>
                 <Flex vertical>
                   <span className="text-base  font-bold uppercase">Email</span>
-                  <span className="text-base ">imct.co.info@gmail.com - conghuu2000@gmail.com</span>
+                  <span className="text-sm ">imct.co.info@gmail.com - conghuu2000@gmail.com</span>
                 </Flex>
               </Flex>
             </Flex>
@@ -98,7 +66,7 @@ const Contact = () => (
                 </Flex>
                 <Flex vertical>
                   <span className="text-base  font-bold uppercase">Văn phòng tại hà nội</span>
-                  <span className="text-base ">Số 20/1, Ngách 21, Ngõ 168 Nguyễn P. Hạ Đình, Thanh Xuân, Hà Nội</span>
+                  <span className="text-sm ">Số 20/1, Ngách 21, Ngõ 168 Nguyễn P. Hạ Đình, Thanh Xuân, Hà Nội</span>
                 </Flex>
               </Flex>
               <Flex className="gap-4" align="center">
@@ -107,7 +75,7 @@ const Contact = () => (
                 </Flex>
                 <Flex vertical>
                   <span className="text-base  font-bold uppercase">Hotline</span>
-                  <span className="text-base ">(0243) 2010073 - (0286) 2967455 - 0913222613</span>
+                  <span className="text-sm ">(0243) 2010073 - (0286) 2967455 - 0913222613</span>
                 </Flex>
               </Flex>
               <Flex className="gap-4" align="center">
@@ -116,7 +84,7 @@ const Contact = () => (
                 </Flex>
                 <Flex vertical>
                   <span className="text-base  font-bold uppercase">Email</span>
-                  <span className="text-base ">imct.co.info@gmail.com - conghuu2000@gmail.com</span>
+                  <span className="text-sm ">imct.co.info@gmail.com - conghuu2000@gmail.com</span>
                 </Flex>
               </Flex>
             </Flex>
@@ -137,24 +105,24 @@ const Contact = () => (
         <Form className="grid grid-cols-2 gap-8">
           <div className="w-full gap-8">
             <Form.Item>
-              <Input placeholder="Họ tên:" className="border-x-0 border-t-0 border-b-2 rounded-none text-xl" />
+              <Input placeholder="Họ tên:" className="border-x-0 border-t-0 border-b-2 rounded-none text-base" />
             </Form.Item>
             <Form.Item>
-              <Input placeholder="Email:" className="border-x-0 border-t-0 border-b-2 rounded-none text-xl" />
+              <Input placeholder="Email:" className="border-x-0 border-t-0 border-b-2 rounded-none text-base" />
             </Form.Item>
             <Form.Item>
-              <Input placeholder="Điện thoại:" className="border-x-0 border-t-0 border-b-2 rounded-none text-xl" />
+              <Input placeholder="Điện thoại:" className="border-x-0 border-t-0 border-b-2 rounded-none text-base" />
             </Form.Item>
           </div>
           <div className="w-full gap-8 justify-end relative">
             <Form.Item>
-              <TextArea placeholder="Tin nhắn:" rows={5} className="rounded-none text-xl" />
+              <TextArea placeholder="Tin nhắn:" rows={7} className="rounded-none text-[13px]" />
             </Form.Item>
 
             <Button
               type="primary"
               htmlType="submit"
-              className="bg-primary rounded-none ml-auto absolute right-0 w-1/4 h-10 text-xl"
+              className="bg-primary rounded-none ml-auto absolute right-0 w-[115px] h-[40px] text-sm"
             >
               Gửi tin nhắn
             </Button>

@@ -7,10 +7,13 @@ const Infrastructure = () => {
         <Col span={13} className="">
           <Flex vertical gap={20}>
             <Flex vertical gap={15}>
-              <span className="text-[40px] font-bold">Cơ Sở Vật Chất Và Tài Sản Phục Vụ Công Việc</span>
-              <hr className="w-[204px] text-[#529949] border " />
+              <span className="text-[40px] font-bold">
+                Cơ Sở Vật Chất Và
+                <br /> Tài Sản Phục Vụ Công Việc
+              </span>
+              <hr className="w-[192px] text-[#529949] border " />
             </Flex>
-            <p className="text-justify text-black text-base font-normal font-['Inter']">
+            <p className="text-justify text-black text-sm font-normal font-['Inter']">
               Các chuyên gia/kỹ sư của IMCT khi tham gia thực hiện dịch vụ Tư vấn đều được trang bị thiết bị làm việc
               hiện đại.
               <br /> <br />
@@ -31,7 +34,7 @@ const Infrastructure = () => {
           </Flex>
         </Col>
         <Col className="p-[30px] relative shadow-default bg-white">
-          <div className="background-image infrastructure w-[575px] h-[575px] relative z-[2]" />
+          <div className="background-image infrastructure w-[482px] h-[482px] relative z-[2]" />
           <div className="w-[250px] h-[250px] bg-dark-green absolute top-0 left-0" />
           <div className="w-[250px] h-[250px] bg-dark-green absolute bottom-0 right-0" />
         </Col>

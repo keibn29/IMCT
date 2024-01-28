@@ -5,17 +5,21 @@ const Capacity = () => {
     <Flex className="bg-light-gray py-[70px]" justify="center">
       <Row className="container" justify="space-between">
         <Col className="p-[30px] relative shadow-default bg-white">
-          <div className="background-image capacity w-[575px] h-[575px] relative z-[2]" />
+          <div className="background-image capacity w-[482px] h-[482px] relative z-[2]" />
           <div className="w-[250px] h-[250px] bg-dark-green absolute top-0 left-0" />
           <div className="w-[250px] h-[250px] bg-dark-green absolute bottom-0 right-0" />
         </Col>
         <Col span={13} className="py-[50px]">
           <Flex vertical gap={20}>
             <Flex vertical gap={15}>
-              <span className="text-[40px] font-bold">Năng Lực Tài Chính Và Tuân Thủ Nghĩa Vụ Thuế/Bảo Hiểm</span>
-              <hr className="w-[204px] text-[#529949] border " />
+              <span className="text-[40px] font-bold">
+                Năng Lực Tài Chính Và <br /> Tuân Thủ Nghĩa Vụ Thuế/
+                <br />
+                Bảo Hiểm
+              </span>
+              <hr className="w-[192px] text-[#529949] border " />
             </Flex>
-            <p className="text-justify text-black text-lg font-normal font-['Inter']">
+            <p className="text-justify text-black text-sm font-normal font-['Inter']">
               Khách hàng có thể tiến hành bất cứ cuộc thẩm tra/xác minh các thông tin tài chính của IMCT.
               <br /> <br />
               Với nguồn vốn lưu động sẵn có. IMCT luôn khẳng định và tin tưởng việc đảm bảo nguồn tài chính để thực hiện

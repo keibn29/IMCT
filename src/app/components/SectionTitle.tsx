@@ -9,7 +9,7 @@ interface ISectionTitleProps {
 }
 
 const SectionTitle = (props: ISectionTitleProps) => (
-  <Flex justify="center" align="center" gap={25} className={`mb-[50px] ${props.className}`}>
+  <Flex justify="center" align="center" gap={25} className={`mb-[60px] ${props.className}`}>
     {props.isWhite ? <HorizontalWhite className="mt-[5px]" /> : <HorizontalGreen className="mt-[5px]" />}
     <span className={`text-[40px] font-bold ${props.isWhite && 'text-white'}`}>{props.title}</span>
     {props.isWhite ? <HorizontalWhite className="mt-[5px]" /> : <HorizontalGreen className="mt-[5px]" />}

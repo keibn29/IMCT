@@ -3,6 +3,9 @@ import SectionTitle from 'app/components/SectionTitle';
 import ProductImage from '../../../images/product.png';
 import ProductImage2 from '../../../images/product2.png';
 import ProductImage3 from '../../../images/product3.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 interface ICarousel {
   id: number;
   imageUrl: string;
@@ -34,25 +37,30 @@ const listCarousel: ICarousel[] = [
 ];
 
 const Product = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <Flex className="bg-light-gray py-[80px]" justify="center">
-      <div className="container">
-        <SectionTitle title="Sản Phẩm & Giải Pháp" />
-        <Row gutter={30}>
-          {listCarousel.map((carousel: ICarousel) => (
-            <Col key={carousel.id} span={8}>
-              <Flex vertical className="h-[100%]">
-                <Image width="100%" height={300} src={carousel.imageUrl} preview={false} />
-                <div className="text-2xl text-primary font-bold mt-[10px]">
-                  <span>{carousel.title}</span>
-                </div>
-                <p className="text-justify mt-[15px]">{carousel.content}</p>
-              </Flex>
-            </Col>
-          ))}
-        </Row>
-      </div>
-    </Flex>
+    <div data-aos="fade-up" data-aos-duration="3000">
+      <Flex className="bg-light-gray py-[80px]" justify="center">
+        <div className="container">
+          <SectionTitle title="Sản Phẩm & Giải Pháp" />
+          <Row gutter={30}>
+            {listCarousel.map((carousel: ICarousel) => (
+              <Col key={carousel.id} span={8}>
+                <Flex vertical className="h-[100%]">
+                  <Image width="100%" height={300} src={carousel.imageUrl} preview={false} />
+                  <div className="text-2xl text-primary font-bold mt-[10px]">
+                    <span>{carousel.title}</span>
+                  </div>
+                  <p className="text-justify mt-[15px]">{carousel.content}</p>
+                </Flex>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </Flex>
+    </div>
   );
 };
 
