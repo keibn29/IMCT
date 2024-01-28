@@ -1,6 +1,9 @@
 import { Col, Flex, Row, Tabs, TabsProps, Typography } from 'antd';
 import HorizontalIntro from 'images/horizontal-intro.svg?react';
 import ArrowRight from 'images/arrow-right.svg?react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const { Title } = Typography;
 
 const tabItems: TabsProps['items'] = [
@@ -41,33 +44,38 @@ const tabItems: TabsProps['items'] = [
 ];
 
 const Introduction = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <Flex className="bg-light-gray py-[70px]" justify="center">
-      <Row className="container" justify="space-between">
-        <Col className="p-[30px] relative shadow-default bg-white">
-          <div className="background-image introduction w-[575px] h-[575px] relative z-[2]" />
-          <div className="w-[250px] h-[250px] bg-dark-green absolute top-0 left-0" />
-          <div className="w-[250px] h-[250px] bg-dark-green absolute bottom-0 right-0" />
-        </Col>
-        <Col span={13} className="py-[50px]">
-          <Flex vertical gap={20}>
-            <Flex align="center" gap={15}>
-              <span className="text-[40px] font-bold">Giới Thiệu</span>
-              <HorizontalIntro className="mt-[3px]" />
+    <div data-aos="fade-up" data-aos-duration="3000">
+      <Flex className="bg-light-gray py-[70px] home-introduction" justify="center">
+        <Row className="container" justify="space-between">
+          <Col className="p-[30px] relative shadow-default bg-white">
+            <div className="background-image introduction w-[575px] h-[575px] relative z-[2]" />
+            <div className="w-[250px] h-[250px] bg-dark-green absolute top-0 left-0" />
+            <div className="w-[250px] h-[250px] bg-dark-green absolute bottom-0 right-0" />
+          </Col>
+          <Col span={13} className="py-[50px]">
+            <Flex vertical gap={20}>
+              <Flex align="center" gap={15}>
+                <span className="text-[40px] font-bold">Giới Thiệu</span>
+                <HorizontalIntro className="mt-[3px]" />
+              </Flex>
+              <p className="text-justify text-base">
+                Giải pháp sáng tạo - Dịch vụ chuyên nghiệp là tất cả những gì mà chúng tôi muốn đem tới cho bạn để đạt
+                được sự hài lòng cao nhất của khách hàng.
+              </p>
+              <Tabs className="styled-tabs" defaultActiveKey="1" items={tabItems} />
             </Flex>
-            <p className="text-justify text-base">
-              Giải pháp sáng tạo - Dịch vụ chuyên nghiệp là tất cả những gì mà chúng tôi muốn đem tới cho bạn để đạt
-              được sự hài lòng cao nhất của khách hàng.
-            </p>
-            <Tabs className="styled-tabs" defaultActiveKey="1" items={tabItems} />
-          </Flex>
-          <Flex className="mt-[50px] text-primary" align="center" gap={3}>
-            <span className="text-base font-bold cursor-pointer select-none">Xem thêm</span>
-            <ArrowRight className="mt-[4px]" />
-          </Flex>
-        </Col>
-      </Row>
-    </Flex>
+            <Flex className="mt-[50px] text-primary" align="center" gap={3}>
+              <span className="text-base font-bold cursor-pointer select-none">Xem thêm</span>
+              <ArrowRight className="mt-[4px]" />
+            </Flex>
+          </Col>
+        </Row>
+      </Flex>
+    </div>
   );
 };
 

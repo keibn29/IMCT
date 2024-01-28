@@ -51,15 +51,15 @@ const listPartner: IStandard[] = [
 ];
 const Standard = () => {
   return (
-    <Flex vertical className="bg-white my-[70px]" justify="center" align="center">
+    <Flex vertical className="bg-white mt-[80px] mb-[105px]" justify="center" align="center">
       <SectionTitle title="Tiêu chuẩn trong từng công việc" />
       <Row className="container" justify="space-between">
         <Col span={13} className="h-[699px]">
           {listPartner.map((partner: IStandard) => (
             <Flex key={partner.id} vertical className="">
-              <span className="text-[28px] font-bold mb-4">{partner.title}</span>
+              <span className="text-[28px] font-bold mb-4 font-['Inter']">{partner.title}</span>
               <hr className="w-[204px] text-[#529949] border " />
-              <div className="text-xl my-4">{partner.children}</div>
+              <div className="text-sm mt-6 mb-10 font-['Inter']">{partner.children}</div>
             </Flex>
           ))}
         </Col>

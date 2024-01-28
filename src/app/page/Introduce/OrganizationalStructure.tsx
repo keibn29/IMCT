@@ -25,8 +25,8 @@ const OrganizationalStructure = () => {
       <div className="container px-[100px]">
         <SectionTitle className="z-[2] relative" title="Cơ cấu tổ chức" isWhite={false} />
       </div>
-      <div className="container z-[2]">
-        <p className="text-black text-xl font-bold">
+      <div className="container z-[2] pb-[60px]">
+        <p className="text-black font-bold">
           Công ty IMCT có đội ngũ gồm các chuyên gia/kỹ sư giỏi đang làm việc tại các bộ phận chuyên môn. Các chuyên
           gia, kỹ sư này được đào tạo chuyên nghiệp từ các trường đại học danh tiếng trong nước và quốc tế, giàu kinh
           nghiệm thực tiễn trong các lĩnh vực.
@@ -44,13 +44,13 @@ const OrganizationalStructure = () => {
           </li>
         </ul>
       </div>
-      <div className="container text-white flex justify-center mt-[40px]">
+      <div className="container text-white flex justify-center">
         <div className="grid gap-x-8 w-[80%]">
           <Row justify="center" className="w-full">
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
+            <Col className="w-[160px] h-[40px]"></Col>
+            <Col className="w-[40px] "></Col>
+            <Col className="w-[160px] h-[40px]"></Col>
+            <Col className="w-[40px]"></Col>
             <Tooltip
               color="#77C373"
               overlayClassName="custom-tooltip"
@@ -77,38 +77,38 @@ const OrganizationalStructure = () => {
                 maxWidth: 'none',
               }}
             >
-              <Col className="w-[16%] h-12 rounded-lg bg-[#529949] flex justify-center items-center">
-                <span className="font-bold">Hội đồng Thành Viên</span>
+              <Col className="w-[160px] h-[40px] rounded-lg bg-[#529949] flex justify-center items-center">
+                <span className="font-bold text-[12.8px]">Hội đồng Thành Viên</span>
               </Col>
             </Tooltip>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-10 relative">
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px] h-10 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-12 relative">
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px] h-[40px] relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
               <div className="horizontal-line absolute top-1/2 right-0 border-[1px] border-[#0E0E0E] w-1/2"></div>
             </Col>
-            <Col className="w-[5%] h-12 relative">
+            <Col className="w-[40px] h-[40px] relative">
               <div className="horizontal-line absolute top-1/2 left-0 right-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
             <Tooltip
@@ -140,31 +140,31 @@ const OrganizationalStructure = () => {
               getPopupContainer={(triggerNode) => triggerNode}
               arrowContent={<div style={{ marginLeft: '-8px' }}></div>}
             >
-              <Col className="w-[16%] h-12 bg-[#77C373] rounded-lg flex justify-center items-center">
-                <span className="font-bold">Ban kiểm soát</span>
+              <Col className="w-[160px] h-[40px] bg-[#77C373] rounded-lg flex justify-center items-center">
+                <span className="font-bold text-[12.8px]">Ban kiểm soát</span>
               </Col>
             </Tooltip>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-10 relative">
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px] h-10 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
             <Tooltip
               color="#77C373"
               overlayClassName="custom-tooltip"
@@ -211,38 +211,38 @@ const OrganizationalStructure = () => {
               getPopupContainer={(triggerNode) => triggerNode}
               arrowContent={<div style={{ marginLeft: '-8px' }}></div>}
             >
-              <Col className="w-[16%] h-12 rounded-lg bg-[#529949] flex justify-center items-center">
-                <span className="font-bold">Ban Giám Đốc</span>
+              <Col className="w-[160px] h-[40px] rounded-lg bg-[#529949] flex justify-center items-center">
+                <span className="font-bold text-[12.8px]">Ban Giám Đốc</span>
               </Col>
             </Tooltip>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-10 relative">
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px] h-10 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-12 relative">
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px] h-[40px] relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
               <div className="horizontal-line absolute top-1/2 right-0 border-[1px] border-[#0E0E0E] w-1/2"></div>
             </Col>
-            <Col className="w-[5%] h-12 relative">
+            <Col className="w-[40px] h-[40px] relative">
               <div className="horizontal-line absolute top-1/2 left-0 right-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
             <Tooltip
@@ -294,213 +294,211 @@ const OrganizationalStructure = () => {
               getPopupContainer={(triggerNode) => triggerNode}
               arrowContent={<div style={{ marginLeft: '-8px' }}></div>}
             >
-              <Col className="w-[16%] h-12 bg-[#77C373] rounded-lg flex justify-center items-center">
-                <span className="font-bold">Hội đồng khoa học</span>
+              <Col className="w-[160px] h-[40px] bg-[#77C373] rounded-lg flex justify-center items-center">
+                <span className="font-bold text-[12.8px]">Hội đồng khoa học</span>
               </Col>
             </Tooltip>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[160px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%] h-10 relative">
+            <Col className="w-[152px] h-10 relative">
               <div className="vertical-line absolute h-1/2 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
               <div className="horizontal-line absolute top-1/2 right-0 border-[1px] border-[#0E0E0E] w-1/2"></div>
             </Col>
-            <Col className="w-[5%] h-10 relative">
+            <Col className="w-[40px] h-10 relative">
               <div className="horizontal-line absolute top-1/2 left-0 right-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
-            <Col className="w-[16%] h-10 relative">
+            <Col className="w-[152px] h-10 relative">
               <div className="vertical-line absolute h-1/2 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
               <div className="horizontal-line absolute top-1/2 right-0 left-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
-            <Col className="w-[5%] h-10 relative">
+            <Col className="w-[40px] h-10 relative">
               <div className="horizontal-line absolute top-1/2 left-0 right-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
-            <Col className="w-[16%] h-10 relative">
+            <Col className="w-[152px] h-10 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
               <div className="horizontal-line absolute top-1/2 right-0 left-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
-            <Col className="w-[5%] h-10 relative">
+            <Col className="w-[40px] h-10 relative">
               <div className="horizontal-line absolute top-1/2 left-0 right-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
-            <Col className="w-[16%] h-10 relative">
+            <Col className="w-[152px] h-10 relative">
               <div className="vertical-line absolute h-1/2 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
               <div className="horizontal-line absolute top-1/2 right-0 left-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
-            <Col className="w-[5%] h-10 relative">
+            <Col className="w-[40px] h-10 relative">
               <div className="horizontal-line absolute top-1/2 left-0 right-0 border-[1px] border-[#0E0E0E] w-full"></div>
             </Col>
-            <Col className="w-[16%] h-10 relative">
+            <Col className="w-[152px] h-10 relative">
               <div className="vertical-line absolute h-1/2 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
               <div className="horizontal-line absolute top-1/2 left-0 border-[1px] border-[#0E0E0E] w-1/2"></div>
             </Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%] h-12 rounded-lg bg-[#215E74] flex justify-center items-center">
-              <span className="font-bold">P. Hành Chính -Quản Trị</span>
+            <Col className="w-[152px] h-[40px] rounded-lg bg-[#215E74] flex justify-center items-center">
+              <span className="font-semibold text-center text-[11.2px]">P. Hành Chính -Quản Trị</span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-12 rounded-lg bg-[#215E74] flex justify-center items-center">
-              <span className="font-bold text-center">
-                Trung Tâm DV Tư Vấn
-                <br />
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[40px] rounded-lg bg-[#215E74] flex justify-center items-center">
+              <span className="text-center text-[11.2px] font-semibold ">
+                Trung Tâm DV Tư Vấn <br />
                 Dự Án ODA
               </span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-12 rounded-lg bg-[#215E74] flex justify-center items-center">
-              <span className="font-bold">Trung Tâm CNTT</span>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[40px] rounded-lg bg-[#215E74] flex justify-center items-center">
+              <span className="font-semibold text-center text-[11.2px]">Trung Tâm CNTT</span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-12 rounded-lg bg-[#215E74] flex justify-center items-center">
-              <span className="font-bold">Trung Tâm DV Tư Vấn DN</span>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[40px] rounded-lg bg-[#215E74] flex justify-center items-center">
+              <span className="font-semibold text-center text-[11.2px]">Trung Tâm DV Tư Vấn DN</span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-12 rounded-lg bg-[#215E74] flex justify-center items-center">
-              <span className="font-bold">Văn Phòng TP. HCM</span>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[40px] rounded-lg bg-[#215E74] flex justify-center items-center">
+              <span className="font-semibold text-center text-[11.2px]">Văn Phòng TP. HCM</span>
             </Col>
-            <Col className="w-[5%]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative"></Col>
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold text-center">Bộ Phận Nhân Sự</span>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-center text-[9.6px]">Bộ Phận Nhân Sự</span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="text-center text-xs font-semibold">
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="text-center text-[9.6px] font-semibold leading-none">
                 Phòng DV Tư Vấn Cấp Thoát <br /> Nước, <br /> Môi Trường & CSHT Đô Thị / Nông Thôn
               </span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold text-center">Phòng Tư Vấn Giải Pháp Và Ứng Dụng CNTT</span>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-center text-[9.6px]">Phòng Tư Vấn Giải Pháp Và Ứng Dụng CNTT</span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold text-center">Phòng Các Dịch Vụ Đảm Bảo</span>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-center text-[9.6px]">Phòng Các Dịch Vụ Đảm Bảo</span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative"></Col>
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold">Bộ Phận Kế Toán</span>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-[9.6px]">Bộ Phận Kế Toán</span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold text-center">
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-center text-[9.6px]">
                 Phòng Dịch Vụ Tư Vấn Phát
                 <br /> Triển Nông Nghiệp, Nông <br />
                 Thôn
               </span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold text-center">
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-center text-[9.6px]">
                 Phòng ERP Và Dịch Vụ Giá
                 <br /> Trị Gia Tăng
               </span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold text-center">
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-center text-[9.6px]">
                 Phòng Hỗ Trợ Phát Triển <br />
                 Doanh Nghiệp
               </span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px]"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative">
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative">
               <div className="vertical-line absolute top-0 bottom-0 left-1/2 border-[1px] border-[#0E0E0E]"></div>
             </Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative"></Col>
-            <Col className="w-[5%] h-5 relative"></Col>
-            <Col className="w-[16%] h-5 relative"></Col>
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative"></Col>
+            <Col className="w-[40px] h-5 relative"></Col>
+            <Col className="w-[152px] h-5 relative"></Col>
           </Row>
           <Row justify="center" className="w-full">
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold">Bộ Phận Điều Phối Dự Án</span>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-[9.6px]">Bộ Phận Điều Phối Dự Án</span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold text-center">
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-center text-[9.6px]">
                 Bộ Phận Nghiên Cứu & Tư <br />
                 Vấn Về Ứng Phó Và Biến Đổi
                 <br /> Khí Hậu
               </span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%] h-15 rounded-lg bg-[#52A9C9] flex justify-center items-center">
-              <span className="font-semibold text-center">
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px] h-[52px] rounded-lg bg-[#52A9C9] flex justify-center items-center">
+              <span className="font-semibold text-center text-[9.6px]">
                 Phòng Dịch Vụ CSDL Và <br /> Chuyển Đổi Số
               </span>
             </Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
-            <Col className="w-[5%]"></Col>
-            <Col className="w-[16%]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px]"></Col>
+            <Col className="w-[40px]"></Col>
+            <Col className="w-[152px]"></Col>
           </Row>
         </div>
       </div>

@@ -9,6 +9,8 @@ import Recruitment from 'app/page/Recruitment/Content';
 import News from 'app/page/News/Content';
 import HomeIntroduction from 'app/page/Introduce';
 import ServicePage from 'app/page/ServicePage';
+import NewsDetail from 'app/page/NewsDetail/Content';
+import RecruitmentDetail from 'app/page/RecruitmentDetail/Content';
 
 const DEFAULT_LAYOUT = 'default';
 const NONE_LAYOUT = 'none';
@@ -65,6 +67,18 @@ const sharedItems: ItemType[] = [
   {
     key: '/service',
     components: <ServicePage />,
+    layout: DEFAULT_LAYOUT,
+    private: false,
+  },
+  {
+    key: '/newsdetail',
+    components: <NewsDetail />,
+    layout: DEFAULT_LAYOUT,
+    private: false,
+  },
+  {
+    key: '/recruitmentdetail',
+    components: <RecruitmentDetail />,
     layout: DEFAULT_LAYOUT,
     private: false,
   },

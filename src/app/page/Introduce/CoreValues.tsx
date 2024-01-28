@@ -8,7 +8,7 @@ const CoreValues = () => {
         <Col span={12} className="py-[50px]">
           <Flex vertical gap={20}>
             <Flex align="center" gap={15}>
-              <span className="text-[40px] font-bold text-white">Giá trị cốt lõi</span>
+              <span className="text-[50px] font-bold text-white font-['Inter']">Giá trị cốt lõi</span>
               <HorizontalWhite className="mt-[3px]" />
             </Flex>
             <div className="w-[516px] h-44 text-justify">

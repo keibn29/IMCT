@@ -63,17 +63,18 @@ const Footer = () => (
         </Space>
       </Flex>
       <Flex justify="center" align="center">
-        <div className="grid grid-cols-2 w-fit gap-x-16 gap-y-2 h-max pt-8">
+        <div className="grid grid-cols-2 w-fit gap-x-24 gap-y-2 h-max pt-8">
           <MenuFooter />
         </div>
       </Flex>
       <Flex justify="center" align="center">
         <div className="w-fit grid grid-flow-row auto-rows-min gap-4 pt-12">
-          <span className="text-white text-2xl font-medium w-fit">Đăng Ký Ngay</span>
-          <span className="text-white ">Đăng ký để nhận những tin tức mới nhất từ chúng tôi.</span>
+          <span className="text-white text-xl font-medium w-fit">Đăng Ký Ngay</span>
+          <span className="text-white text-base ">Đăng ký để nhận những tin tức mới nhất từ chúng tôi.</span>
           <Input
+            className="email-input"
             addonAfter={<SendOutlined style={{ color: 'white', backgroundColor: 'primary', border: 'none' }} />}
-            defaultValue="Email"
+            placeholder="Email"
           />
           <Space>
             <FacebookFilled style={{ color: 'white', fontSize: '2.25rem', lineHeight: '2.5rem' }} />

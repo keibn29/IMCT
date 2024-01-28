@@ -8,7 +8,9 @@ import ReportIcon from 'images/report.svg?react';
 import DeploymentIcon from 'images/deployment.svg?react';
 import AnalystIcon from 'images/analyst.svg?react';
 import SectionTitle from 'app/components/SectionTitle';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 interface IService {
   id: number;
   icon: JSX.Element;
@@ -76,25 +78,30 @@ const listService: IService[] = [
 ];
 
 const Service = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="container mx-[auto] py-[80px]">
-      <SectionTitle title="Dịch Vụ Của Chúng Tôi" />
-      <Row gutter={[20, 20]}>
-        {listService.map((service: IService) => (
-          <Col key={service.id} span={6}>
-            <Flex
-              className="service-wrapper group shadow-default h-[300px] px-[30px] py-[30px] text-center hover:bg-primary hover:text-white cursor-pointer"
-              align="center"
-              vertical
-              gap={20}
-            >
-              <Space className="service-icon">{service.icon}</Space>
-              <span className="text-primary text-lg font-bold group-hover:text-white h-[50px]">{service.title}</span>
-              <p className="text-[15px] h-[90px] overflow-hidden text-ellipsis line-clamp-4">{service.content}</p>
-            </Flex>
-          </Col>
-        ))}
-      </Row>
+    <div data-aos="fade-up" data-aos-duration="3000">
+      <div className="container mx-[auto] py-[100px]">
+        <SectionTitle title="Dịch Vụ Của Chúng Tôi" />
+        <Row gutter={[20, 20]}>
+          {listService.map((service: IService) => (
+            <Col key={service.id} span={6}>
+              <Flex
+                className="service-wrapper group shadow-default h-[300px] px-[30px] py-[30px] text-center hover:bg-primary hover:text-white cursor-pointer"
+                align="center"
+                vertical
+                gap={20}
+              >
+                <Space className="service-icon">{service.icon}</Space>
+                <span className="text-primary text-lg font-bold group-hover:text-white h-[50px]">{service.title}</span>
+                <p className="text-[15px] h-[90px] overflow-hidden text-ellipsis line-clamp-4">{service.content}</p>
+              </Flex>
+            </Col>
+          ))}
+        </Row>
+      </div>
     </div>
   );
 };

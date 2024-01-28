@@ -12,7 +12,7 @@ const CommitmentToQuality = () => {
           Công ty IMCT áp dụng Hệ thống quản lý chất lượng toàn diện (TQMS)
         </p>
         <br />
-        <p className="text-base ">
+        <p className="text-sm ">
           Quy trình quản lý chất lượng của công ty được quy định trong Sổ tay hướng dẫn về chất lượng. Đối với từng dự
           án, công tác quản lý được thực hiện theo tiêu chuẩn TCVN 11866:2017 ISO 21500:2012. Nhân viên, chuyên gia/kỹ
           sư và các trợ lý hiện trường khi tham gia dự án đều được đào tạo để thực hiện theo quy trình này.
