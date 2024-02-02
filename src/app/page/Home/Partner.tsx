@@ -41,13 +41,13 @@ const Partner = () => {
     AOS.init();
   }, []);
   return (
-    <div data-aos="fade-up" data-aos-duration="3000">
-      <Flex className="py-[80px] partner-container background-image" justify="center">
-        <div className="container px-[100px]">
-          <SectionTitle className="z-[2] relative" title="Đối Tác Của Chúng Tôi" isWhite={true} />
-          <Row gutter={30} className="mt-[10px]">
-            {listPartner.map((partner: IPartner) => (
-              <Col key={partner.id} span={8}>
+    <Flex className="py-[80px] partner-container background-image" justify="center">
+      <div className="container px-[100px]">
+        <SectionTitle className="z-[2] relative" title="Đối Tác Của Chúng Tôi" isWhite={true} />
+        <Row gutter={30} className="mt-[10px]">
+          {listPartner.map((partner: IPartner) => (
+            <Col key={partner.id} span={8}>
+              <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                 <Flex
                   vertical
                   className="group cursor-pointer h-[100%] rounded-[10px] bg-white relative overflow-hidden hover:text-white partner-wrapper"
@@ -73,12 +73,12 @@ const Partner = () => {
                     </Flex>
                   </div>
                 </Flex>
-              </Col>
-            ))}
-          </Row>
-        </div>
-      </Flex>
-    </div>
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </div>
+    </Flex>
   );
 };
 
