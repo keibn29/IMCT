@@ -41,13 +41,13 @@ const Product = () => {
     AOS.init();
   }, []);
   return (
-    <div data-aos="fade-up" data-aos-duration="3000">
-      <Flex className="bg-light-gray py-[80px]" justify="center">
-        <div className="container">
-          <SectionTitle title="Sản Phẩm & Giải Pháp" />
-          <Row gutter={30}>
-            {listCarousel.map((carousel: ICarousel) => (
-              <Col key={carousel.id} span={8}>
+    <Flex className="bg-light-gray py-[80px]" justify="center">
+      <div className="container">
+        <SectionTitle title="Sản Phẩm & Giải Pháp" />
+        <Row gutter={30}>
+          {listCarousel.map((carousel: ICarousel) => (
+            <Col key={carousel.id} span={8}>
+              <div data-aos="zoom-in-up" data-aos-duration="3000" data-aos-once="true">
                 <Flex vertical className="h-[100%]">
                   <Image width="100%" height={300} src={carousel.imageUrl} preview={false} />
                   <div className="text-2xl text-primary font-bold mt-[10px]">
@@ -55,12 +55,12 @@ const Product = () => {
                   </div>
                   <p className="text-justify mt-[15px]">{carousel.content}</p>
                 </Flex>
-              </Col>
-            ))}
-          </Row>
-        </div>
-      </Flex>
-    </div>
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </div>
+    </Flex>
   );
 };
 

@@ -82,12 +82,12 @@ const Service = () => {
     AOS.init();
   }, []);
   return (
-    <div data-aos="fade-up" data-aos-duration="3000">
-      <div className="container mx-[auto] py-[100px]">
-        <SectionTitle title="Dịch Vụ Của Chúng Tôi" />
-        <Row gutter={[20, 20]}>
-          {listService.map((service: IService) => (
-            <Col key={service.id} span={6}>
+    <div className="container mx-[auto] py-[100px]">
+      <SectionTitle title="Dịch Vụ Của Chúng Tôi" />
+      <Row gutter={[20, 20]}>
+        {listService.map((service: IService) => (
+          <Col key={service.id} span={6}>
+            <div data-aos="flip-left" data-aos-duration="3000" data-aos-once="true">
               <Flex
                 className="service-wrapper group shadow-default h-[300px] px-[30px] py-[30px] text-center hover:bg-primary hover:text-white cursor-pointer"
                 align="center"
@@ -98,10 +98,10 @@ const Service = () => {
                 <span className="text-primary text-lg font-bold group-hover:text-white h-[50px]">{service.title}</span>
                 <p className="text-[15px] h-[90px] overflow-hidden text-ellipsis line-clamp-4">{service.content}</p>
               </Flex>
-            </Col>
-          ))}
-        </Row>
-      </div>
+            </div>
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 };
