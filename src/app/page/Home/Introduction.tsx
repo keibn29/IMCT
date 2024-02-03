@@ -50,7 +50,7 @@ const Introduction = () => {
   return (
     <Flex className="bg-light-gray py-[70px] home-introduction" justify="center">
       <Row className="container" justify="space-between">
-        <div data-aos="zoom-in-up" data-aos-duration="3000" data-aos-once="true">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-anchor-placement="top-bottom">
           <Col className="p-[30px] relative shadow-default bg-white">
             <div className="background-image introduction w-[575px] h-[575px] relative z-[2]" />
             <div className="w-[250px] h-[250px] bg-dark-green absolute top-0 left-0" />
@@ -60,13 +60,23 @@ const Introduction = () => {
 
         <Col span={13} className="py-[50px]">
           <Flex vertical gap={20}>
-            <div data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              data-aos-anchor-placement="center-bottom"
+            >
               <Flex align="center" gap={15}>
                 <span className="text-[40px] font-bold">Giới Thiệu</span>
                 <HorizontalIntro className="mt-[3px]" />
               </Flex>
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              data-aos-anchor-placement="center-bottom"
+            >
               <p className="text-justify text-base">
                 Giải pháp sáng tạo - Dịch vụ chuyên nghiệp là tất cả những gì mà chúng tôi muốn đem tới cho bạn để đạt
                 được sự hài lòng cao nhất của khách hàng.
@@ -74,7 +84,12 @@ const Introduction = () => {
               <Tabs className="styled-tabs" defaultActiveKey="1" items={tabItems} />
             </div>
           </Flex>
-          <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-anchor-placement="center-bottom"
+          >
             <Flex className="mt-[50px] text-primary" align="center" gap={3}>
               <span className="text-base font-bold cursor-pointer select-none">Xem thêm</span>
               <ArrowRight className="mt-[4px]" />

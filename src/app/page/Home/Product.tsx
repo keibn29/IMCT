@@ -47,9 +47,15 @@ const Product = () => {
         <Row gutter={30}>
           {listCarousel.map((carousel: ICarousel) => (
             <Col key={carousel.id} span={8}>
-              <div data-aos="zoom-in-up" data-aos-duration="3000" data-aos-once="true">
-                <Flex vertical className="h-[100%]">
-                  <Image width="100%" height={300} src={carousel.imageUrl} preview={false} />
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <Flex vertical className="h-[100%] product-wrapper">
+                  <Image
+                    width="100%"
+                    height={300}
+                    src={carousel.imageUrl}
+                    preview={false}
+                    className="zoom-in object-cover"
+                  />
                   <div className="text-2xl text-primary font-bold mt-[10px]">
                     <span>{carousel.title}</span>
                   </div>

@@ -7,12 +7,10 @@ const Banner = () => {
     AOS.init();
   }, []);
   return (
-    <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
-      <DefaultCarousel>
-        <div className="background-image banner w-[100vw] h-[100vh]" />
-        <div className="background-image banner1 w-[100vw] h-[100vh]" />
-      </DefaultCarousel>
-    </div>
+    <DefaultCarousel>
+      <div className="background-image banner w-[100vw] h-[100vh]" />
+      <div className="background-image banner1 w-[100vw] h-[100vh]" />
+    </DefaultCarousel>
   );
 };
 

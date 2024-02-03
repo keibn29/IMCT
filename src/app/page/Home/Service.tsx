@@ -87,16 +87,15 @@ const Service = () => {
       <Row gutter={[20, 20]}>
         {listService.map((service: IService) => (
           <Col key={service.id} span={6}>
-            <div data-aos="flip-left" data-aos-duration="3000" data-aos-once="true">
-              <Flex
-                className="service-wrapper group shadow-default h-[300px] px-[30px] py-[30px] text-center hover:bg-primary hover:text-white cursor-pointer"
-                align="center"
-                vertical
-                gap={20}
-              >
-                <Space className="service-icon">{service.icon}</Space>
-                <span className="text-primary text-lg font-bold group-hover:text-white h-[50px]">{service.title}</span>
-                <p className="text-[15px] h-[90px] overflow-hidden text-ellipsis line-clamp-4">{service.content}</p>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+              <Flex className="service-wrapper group shadow-default h-[300px] px-[30px] py-[30px] text-center overflow-hidden hover:text-white cursor-pointer">
+                <Flex vertical align="center" gap={20} className="group-hover:z-[2] group-hover:bg-transparent">
+                  <Space className="service-icon">{service.icon}</Space>
+                  <span className="text-primary text-lg font-bold group-hover:text-white h-[50px]">
+                    {service.title}
+                  </span>
+                  <p className="text-[15px] h-[90px] overflow-hidden text-ellipsis line-clamp-4">{service.content}</p>
+                </Flex>
               </Flex>
             </div>
           </Col>

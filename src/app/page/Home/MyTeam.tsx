@@ -31,7 +31,7 @@ const MyTeam = () => {
     <Flex className="bg-light-gray pt-[50px] pb-[70px]" justify="center">
       <div className="container px-[100px]">
         <SectionTitle title="Đội Ngũ Của Chúng Tôi" />
-        <div data-aos="zoom-in-up" data-aos-duration="3000" data-aos-once="true">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <DefaultCarousel dots={false} slidesToShow={4} autoplay={false}>
             {members.map((member: ITeamMember) => (
               <div key={member.id}>
