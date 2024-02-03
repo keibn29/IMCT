@@ -24,13 +24,13 @@ const MapComponent = () => {
 
       <Flex className="text-white bg-primary w-full h-[683px]" justify="center" align="center">
         <Flex vertical gap={20}>
-          <Flex className="mt-[50px] pb-3 " gap={20} align="center">
-            <span className="text-5xl ">Liên Hệ</span>
-            <div data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+            <Flex className="mt-[50px] pb-3 " gap={20} align="center">
+              <span className="text-5xl ">Liên Hệ</span>
               <div className="mt-[4px] h-[3px] w-[115px] bg-white line" />
-            </div>
-          </Flex>
-          <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+            </Flex>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <Flex vertical gap={20}>
               <Flex className="gap-4" align="center">
                 <Flex className="bg-white h-[2.5rem]" justify="center" align="center" style={{ aspectRatio: 1 }}>

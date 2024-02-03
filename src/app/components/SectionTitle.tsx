@@ -16,11 +16,13 @@ const SectionTitle = (props: ISectionTitleProps) => {
   }, []);
   return (
     <Flex justify="center" align="center" gap={25} className={`mb-[60px] ${props.className}`}>
-      <div data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" data-aos-anchor-placement="top-bottom">
         {props.isWhite ? <HorizontalWhite className="mt-[5px]" /> : <HorizontalGreen className="mt-[5px]" />}
       </div>
-      <span className={`text-[40px] font-bold ${props.isWhite && 'text-white'}`}>{props.title}</span>
-      <div data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+      <div data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-anchor-placement="top-bottom">
+        <span className={`text-[40px] font-bold ${props.isWhite && 'text-white'}`}>{props.title}</span>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-anchor-placement="top-bottom">
         {props.isWhite ? <HorizontalWhite className="mt-[5px]" /> : <HorizontalGreen className="mt-[5px]" />}
       </div>
     </Flex>

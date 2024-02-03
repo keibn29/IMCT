@@ -29,7 +29,7 @@ const Customer = () => {
     <Flex className="bg-white pt-[50px] pb-[70px]" justify="center">
       <div className="container px-[100px]">
         <SectionTitle title="Khách Hàng Của Chúng Tôi" />
-        <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-once="true">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <DefaultCarousel dots={false} slidesToShow={4}>
             {listImageCustomer.map((img: IImageCustomer, index: number) => (
               <div key={img.id} className="px-[10px]">
